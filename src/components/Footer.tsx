@@ -33,16 +33,16 @@ export default function Footer() {
                 href="https://linkedin.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-gray-400 hover:text-white transition-colors no-underline hover:no-underline focus:no-underline"
                 aria-label="LinkedIn"
               >
                 <FaLinkedin className="w-6 h-6" />
               </a>
               <a 
-                href="https://github.com" 
+                href="https://github.com/1sraeliteX" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-gray-400 hover:text-white transition-colors no-underline hover:no-underline focus:no-underline"
                 aria-label="GitHub"
               >
                 <FaGithub className="w-6 h-6" />
@@ -53,10 +53,10 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4 text-white border-b border-gray-800 pb-2">Services</h4>
             <ul className="space-y-3">
-              <li><Link href="/services/development" className="text-gray-400 hover:text-white transition-colors">Development</Link></li>
-              <li><Link href="/services/design" className="text-gray-400 hover:text-white transition-colors">Design</Link></li>
-              <li><Link href="/services/branding" className="text-gray-400 hover:text-white transition-colors">Branding</Link></li>
-              <li><Link href="/services/consulting" className="text-gray-400 hover:text-white transition-colors">Consulting</Link></li>
+              <li><Link href="/services/development" className="text-gray-400 hover:text-white transition-colors no-underline hover:no-underline focus:no-underline">Development</Link></li>
+              <li><Link href="/services/design" className="text-gray-400 hover:text-white transition-colors no-underline hover:no-underline focus:no-underline">Design</Link></li>
+              <li><Link href="/services/branding" className="text-gray-400 hover:text-white transition-colors no-underline hover:no-underline focus:no-underline">Branding</Link></li>
+              <li><Link href="/services/consulting" className="text-gray-400 hover:text-white transition-colors no-underline hover:no-underline focus:no-underline">Consulting</Link></li>
             </ul>
           </div>
         </div>

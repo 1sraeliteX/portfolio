@@ -1,125 +1,96 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useRef } from 'react';
 
 export default function Testimonials() {
   const scrollContainer = useRef<HTMLDivElement>(null);
-  
 
   const testimonials = [
     {
-      quote: "Outstanding work! The team has exceeded our expectations with their innovative solutions and attention to detail.",
-      author: "John Smith",
-      role: "CEO, Example Inc.",
-      avatar: "/avatars/john-smith.jpg"
+      quote: "The e-commerce platform they built for our auction business has transformed our operations. The bidding system is smooth and reliable, and we've experienced remarkable sales growth since launch.",
+      author: "Ikechukwu Israel",
+      role: "CEO, Fairbid",
+      avatar: "/wan92.png"
     },
     {
-      quote: "Quick implementation and professional advice. Their team delivered beyond our requirements!",
-      author: "Jane Doe",
-      role: "Marketing Director, Test Corp",
-      avatar: "/avatars/jane-doe.jpg"
+      quote: "Working with this team on our dental practice management system was a game-changer. The system is intuitive for our staff and has significantly improved patient scheduling and record-keeping.",
+      author: "Dr. Sarah Williams",
+      role: "Founder, Dr. Pink Orthodontics",
+      avatar: "https://randomuser.me/api/portraits/women/44.jpg"
     },
     {
-      quote: "The quality of work and communication was exceptional. Will definitely work with them again.",
-      author: "Michael Johnson",
-      role: "CTO, Tech Innovations",
-      avatar: "/avatars/michael-johnson.jpg"
-    },
-    {
-      quote: "Transformed our online presence completely. The results speak for themselves!",
-      author: "Sarah Williams",
-      role: "Founder, Creative Solutions",
-      avatar: "/avatars/sarah-williams.jpg"
-    },
-    {
-      quote: "Professional, creative, and delivered on time. Highly recommended for any web project.",
+      quote: "The Tap to Earn app they developed has been a huge success. The game mechanics are engaging, and we've seen incredible user retention rates. The team's understanding of blockchain integration was particularly impressive.",
       author: "David Kim",
-      role: "Product Manager, NextGen Apps",
-      avatar: "/avatars/david-kim.jpg"
+      role: "Product Lead, Tap to Earn",
+      avatar: "https://randomuser.me/api/portraits/men/75.jpg"
+    },
+    {
+      quote: "The waste management app they developed has helped us optimize our collection routes and achieve significant cost savings. The team was professional and delivered beyond our expectations.",
+      author: "Emily Rodriguez",
+      role: "Director, GreenClean",
+      avatar: "https://randomuser.me/api/portraits/women/68.jpg"
+    },
+    {
+      quote: "Our crypto investment platform has seen incredible growth since the redesign. The trading interface is clean, responsive, and our users love the new features.",
+      author: "James Wilson",
+      role: "CTO, DeFiPulseX",
+      avatar: "https://randomuser.me/api/portraits/men/86.jpg"
+    },
+    {
+      quote: "The trading platform they built for us has been instrumental in our success. The analytics dashboard provides valuable insights, and the execution speed is impressive.",
+      author: "Robert Johnson",
+      role: "CEO, AtlasWealth",
+      avatar: "https://randomuser.me/api/portraits/men/22.jpg"
     }
   ];
 
   return (
-    <section className="pt-20 pb-[42px] bg-white relative">
+    <div className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">What Our Clients Say</h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-2 text-black">What Our Clients Say</h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Don't just take our word for it. Here's what our clients have to say about working with us.
           </p>
         </div>
 
-        <div className="relative pb-10">
+        <div className="relative">
           <div 
             ref={scrollContainer}
-            className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide"
-            style={{
-              WebkitOverflowScrolling: 'touch',
-              msOverflowStyle: 'none',
-              scrollbarWidth: 'none',
-              gap: '1.5rem',
-              scrollPadding: '0 1rem',
-              padding: '0 1rem',
-              cursor: 'grab'
-            }}
-            onMouseDown={(e) => {
-              const container = e.currentTarget;
-              const startX = e.pageX - container.offsetLeft;
-              const scrollLeft = container.scrollLeft;
-              
-              const mouseMove = (e: MouseEvent) => {
-                e.preventDefault();
-                const x = e.pageX - container.offsetLeft;
-                const walk = (x - startX) * 2;
-                container.scrollLeft = scrollLeft - walk;
-              };
-              
-              const mouseUp = () => {
-                document.removeEventListener('mousemove', mouseMove);
-                document.removeEventListener('mouseup', mouseUp);
-                container.style.cursor = 'grab';
-              };
-              
-              container.style.cursor = 'grabbing';
-              document.addEventListener('mousemove', mouseMove);
-              document.addEventListener('mouseup', mouseUp);
-            }}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
             {testimonials.map((testimonial, index) => (
               <div 
                 key={index} 
-                className="snap-start w-[300px] flex-shrink-0 bg-white p-6 rounded-2xl shadow-lg border border-gray-100 flex flex-col mb-8"
+                className="group relative overflow-hidden rounded-2xl backdrop-blur-xl bg-white/80 border border-white/30 
+                  shadow-[0_8px_32px_0_rgba(0,0,0,0.08)] hover:shadow-[0_12px_48px_0_rgba(0,0,0,0.12)] 
+                  transition-all duration-300 transform hover:-translate-y-1
+                  backdrop-saturate-150 backdrop-filter backdrop-blur-xl p-6"
               >
-                <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-2xl text-gray-400 mr-4">
-                    {testimonial.avatar ? (
-                      <img src={testimonial.avatar} alt={testimonial.author} className="w-full h-full rounded-full object-cover" />
-                    ) : (
-                      testimonial.author.charAt(0)
-                    )}
+                <div className="flex items-start mb-6">
+                  <div className="w-16 h-16 rounded-full bg-gray-100 flex-shrink-0 overflow-hidden border-2 border-white shadow-md">
+                    <img 
+                      src={testimonial.avatar} 
+                      alt={testimonial.author}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.src = 'https://ui-avatars.com/api/?name=' + encodeURIComponent(testimonial.author) + '&background=random';
+                      }}
+                    />
                   </div>
-                  <div>
-                    <p className="font-semibold text-black">{testimonial.author}</p>
+                  <div className="ml-4">
+                    <h4 className="font-semibold text-gray-900">{testimonial.author}</h4>
                     <p className="text-sm text-gray-600">{testimonial.role}</p>
                   </div>
                 </div>
-                <p className="text-gray-700 mb-4 break-words overflow-hidden text-ellipsis flex-grow">{testimonial.quote}</p>
+                <p className="text-gray-700 italic mb-6">"{testimonial.quote}"</p>
               </div>
             ))}
           </div>
+          <p className="text-center text-gray-500 italic mt-10">and more...</p>
         </div>
       </div>
-
-      {/* Custom scrollbar styles */}
-      <style jsx global>{`
-        .scrollbar-hide::-webkit-scrollbar {
-          display: none;
-        }
-        .scrollbar-hide {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-        }
-      `}</style>
-    </section>
+    </div>
   );
 }
