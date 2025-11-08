@@ -47,7 +47,7 @@ export default function ContactModal({ isOpen, onCloseAction }: { isOpen: boolea
           
           <div className="space-y-4">
             <a
-              href="tel:+1234567890"
+              href="tel:+2347018080377"
               className="flex items-center justify-center space-x-3 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors"
             >
               <FaPhone className="w-5 h-5" />
@@ -55,7 +55,7 @@ export default function ContactModal({ isOpen, onCloseAction }: { isOpen: boolea
             </a>
             
             <a
-              href="https://wa.me/1234567890"
+              href="https://wa.me/2347018080377"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center space-x-3 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg transition-colors"
@@ -63,10 +63,6 @@ export default function ContactModal({ isOpen, onCloseAction }: { isOpen: boolea
               <FaWhatsapp className="w-5 h-5" />
               <span>WhatsApp</span>
             </a>
-          </div>
-          
-          <div className="mt-6 text-center text-sm text-gray-500">
-            <p>Or email us at <a href="mailto:info@tekdoctor.com" className="text-blue-600 hover:underline">info@tekdoctor.com</a></p>
           </div>
         </motion.div>
       </motion.div>
