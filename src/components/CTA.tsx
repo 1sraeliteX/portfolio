@@ -8,7 +8,7 @@ export default function CTA() {
         </p>
         <a
           href="/contact"
-          className="inline-block bg-black text-white px-8 py-4 rounded-full font-medium hover:bg-gray-800 transition-colors"
+          className="inline-block bg-black text-white px-8 py-4 rounded-full font-medium hover:bg-gray-800 transition-colors no-underline hover:no-underline focus:no-underline"
         >
           Get Started
         </a>

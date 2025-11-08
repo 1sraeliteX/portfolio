@@ -7,9 +7,9 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: "Fairbid E-commerce",
+      title: "AuctionPro",
       description: "Online Auction Platform",
-      image: "/fairbid.png",
+      image: "/auctionpro.png",
       previewUrl: "#",
       tags: ["Website", "E-commerce"]
     },

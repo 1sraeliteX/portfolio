@@ -39,7 +39,7 @@ export default function Footer() {
                 <FaLinkedin className="w-6 h-6" />
               </a>
               <a 
-                href="https://github.com" 
+                href="https://github.com/1sraeliteX" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
