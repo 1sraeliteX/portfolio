@@ -71,7 +71,7 @@ export default function Hero() {
               </button>
               <Link 
                 href="/services" 
-                className="border-2 border-black px-8 py-4 rounded-full text-center font-medium hover:bg-gray-50 transition-colors"
+                className="border-2 border-black px-8 py-4 rounded-full text-center font-medium hover:bg-gray-50 transition-colors no-underline hover:no-underline focus:no-underline"
               >
                 Our Services
               </Link>
