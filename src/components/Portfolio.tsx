@@ -14,18 +14,18 @@ export default function Portfolio() {
       tags: ["Website", "E-commerce"]
     },
     {
+      title: "Dr. Pink Orthodontics",
+      description: "Dental Practice Management System",
+      image: "/drpink.png",
+      previewUrl: "https://www.drpinkortho.com",
+      tags: ["Website", "Healthcare"]
+    },
+    {
       title: "GreenClean",
       description: "Waste management App",
       image: "/greenclean.png",
       previewUrl: "#",
       tags: ["App", "Eco"]
-    },
-    {
-      title: "E-commerce Platform",
-      description: "Full-stack E-commerce Solution",
-      image: "/images/ecommerce.jpg",
-      previewUrl: "#",
-      tags: ["Website", "E-commerce"]
     },
     {
       title: "Tap to Earn App",
@@ -35,18 +35,19 @@ export default function Portfolio() {
       tags: ["App", "Web3"]
     },
     {
-      title: "Task Manager",
-      description: "Productivity Application",
-      image: "/images/task-manager.jpg",
-      previewUrl: "#",
-      tags: ["App", "Productivity"]
+      title: "DefiPulsex",
+      description: "Crypto Investment Trading Platform",
+      image: "/defipulse.png",
+      previewUrl: "https://www.defipulsex.org",
+      tags: ["App", "Web3", "Trading"]
     },
     {
-      title: "Fitness Tracker",
-      description: "Health & Wellness App",
-      image: "/images/fitness-tracker.jpg",
-      previewUrl: "#",
-      tags: ["App", "Health"]
+      title: "AtlasWealth",
+      description: "Crypto Trading Platform",
+      subText: "Advanced trading tools and analytics for crypto investors",
+      image: "/atlas.png",
+      previewUrl: "https://www.atlaswealthltd.org",
+      tags: ["App", "Web3", "Trading", "Finance"]
     }
   ]
 
@@ -84,7 +85,7 @@ export default function Portfolio() {
                     href={project.previewUrl} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="bg-white text-black px-6 py-2 rounded-full font-medium hover:bg-opacity-90 transition-all transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100"
+                    className="bg-white text-black px-6 py-2 rounded-full font-medium hover:bg-opacity-90 transition-all transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 no-underline"
                   >
                     Preview
                   </a>
