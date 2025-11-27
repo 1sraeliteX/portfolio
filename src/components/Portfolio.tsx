@@ -48,6 +48,14 @@ export default function Portfolio() {
       image: "/atlas.png",
       previewUrl: "https://www.atlaswealthltd.org",
       tags: ["App", "Web3", "Trading", "Finance"]
+    },
+    {
+      title: "Boudless",
+      description: "Online cross border payment",
+      subText: "Contributor",
+      image: "/boudless.png",
+      previewUrl: "#",
+      tags: ["Fintech", "Payments", "Web App"]
     }
   ]
 
