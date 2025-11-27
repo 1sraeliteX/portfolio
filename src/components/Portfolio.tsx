@@ -50,11 +50,11 @@ export default function Portfolio() {
       tags: ["App", "Web3", "Trading", "Finance"]
     },
     {
-      title: "Boudless",
+      title: "Boundless",
       description: "Online cross border payment",
       subText: "Contributor",
-      image: "/boudless.png",
-      previewUrl: "#",
+      image: "/boundless.png",
+      previewUrl: "http://boundlessfi.xyz/",
       tags: ["Fintech", "Payments", "Web App"]
     }
   ]
