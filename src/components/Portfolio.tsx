@@ -56,6 +56,13 @@ export default function Portfolio() {
       image: "/boundless.png",
       previewUrl: "http://boundlessfi.xyz/",
       tags: ["Fintech", "Payments", "Web App"]
+    },
+    {
+      title: "Co-Creative HUB",
+      description: "Collaborative Creative Platform",
+      image: "/thesource.png",
+      previewUrl: "https://co-creative.vercel.app",
+      tags: ["Website", "Collaboration"]
     }
   ]
 
