@@ -42,14 +42,6 @@ export default function Portfolio() {
       tags: ["App", "Web3", "Trading"]
     },
     {
-      title: "AtlasWealth",
-      description: "Crypto Trading Platform",
-      subText: "Advanced trading tools and analytics for crypto investors",
-      image: "/atlas.png",
-      previewUrl: "https://www.atlaswealthltd.org",
-      tags: ["App", "Web3", "Trading", "Finance"]
-    },
-    {
       title: "Boundless",
       description: "Online cross border payment",
       subText: "Contributor",
