@@ -36,7 +36,7 @@ export default function Portfolio() {
     },
     {
       title: "DefiPulsex",
-      description: "Crypto Investment Trading Platform",
+      description: "Crypto Trading Platform",
       image: "/defipulse.png",
       previewUrl: "https://www.defipulsex.org",
       tags: ["App", "Web3", "Trading"]
