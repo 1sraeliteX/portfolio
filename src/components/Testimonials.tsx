@@ -37,8 +37,8 @@ export default function Testimonials() {
       avatar: "https://randomuser.me/api/portraits/men/86.jpg"
     },
     {
-      quote: "The trading platform they built for us has been instrumental in our success. The analytics dashboard provides valuable insights, and the execution speed is impressive.",
-      author: "Robert Johnson",
+      quote: "Working on Boundless has been an incredible experience. The cross-border payment solution is seamless and efficient, making international transactions faster and more accessible for users worldwide.",
+      author: "Devcollins",
       role: "CEO, AtlasWealth",
       avatar: "https://randomuser.me/api/portraits/men/22.jpg"
     }
