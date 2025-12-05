@@ -25,7 +25,7 @@ export default function Hero() {
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
   return (
-    <section className="pt-32 px-4 sm:px-6 lg:px-8 bg-white text-black">
+    <section className="pt-40 px-4 sm:px-6 lg:px-8 bg-white text-black">
       <div className="max-w-7xl mx-auto mb-0">
         <div className="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
           <div className="mb-12 lg:mb-0">

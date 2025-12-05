@@ -20,7 +20,7 @@ const NewsTicker = () => {
   };
 
   return (
-    <div className="w-full overflow-hidden bg-blue-600 text-white py-3 shadow-md">
+    <div className="fixed top-16 w-full overflow-hidden bg-blue-600 text-white py-3 shadow-md z-40">
       <motion.div
         className="flex whitespace-nowrap"
         variants={tickerVariants}
