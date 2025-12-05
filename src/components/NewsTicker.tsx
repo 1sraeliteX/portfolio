@@ -3,7 +3,7 @@
 import { motion, Variants } from 'framer-motion';
 
 const NewsTicker = () => {
-  const message = 'Updates: Portfolio is still under maintenance, thanks for checking out!';
+  const message = 'Updates: Portfolio is still under maintenance, thanks for checking in 😊';
 
   const tickerVariants: Variants = {
     animate: {
