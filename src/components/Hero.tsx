@@ -69,12 +69,16 @@ export default function Hero() {
               >
                 Get in Touch
               </button>
-              <Link 
-                href="/services" 
+              <a 
+                href="#services" 
                 className="border-2 border-black px-8 py-4 rounded-full text-center font-medium hover:bg-gray-50 transition-colors no-underline hover:no-underline focus:no-underline"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
+                }}
               >
                 Our Services
-              </Link>
+              </a>
             </div>
           </div>
           <div className="relative w-full h-auto max-w-2xl mx-auto lg:max-w-none lg:ml-auto">

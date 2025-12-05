@@ -21,7 +21,7 @@ export default function Features() {
   ]
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-gray-100 text-black relative overflow-hidden">
+    <section id="services" className="py-20 bg-gradient-to-br from-gray-50 to-gray-100 text-black relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-400/10 rounded-full filter blur-3xl" />
