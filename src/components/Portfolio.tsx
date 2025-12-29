@@ -7,25 +7,11 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: "FairBid",
-      description: "Online Auction Platform",
-      image: "/fairbid.png",
-      previewUrl: "#",
-      tags: ["Website", "E-commerce"]
-    },
-    {
       title: "Dr. Pink Orthodontics",
       description: "Dental Practice Management System",
       image: "/drpink.png",
       previewUrl: "https://www.drpinkortho.com",
       tags: ["Website", "Healthcare"]
-    },
-    {
-      title: "GreenClean",
-      description: "Waste management App",
-      image: "/greenclean.png",
-      previewUrl: "#",
-      tags: ["App", "Eco"]
     },
     {
       title: "Tap to Earn App",
