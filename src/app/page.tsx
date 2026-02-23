@@ -6,14 +6,14 @@ import Testimonials from '@/components/Testimonials';
 import CTA from '@/components/CTA';
 import Ticker from '@/components/Ticker';
 import NewsTicker from '@/components/NewsTicker';
-import SeasonalGreeting from '@/components/SeasonalGreeting';
+// import SeasonalGreeting from '@/components/SeasonalGreeting';
 
 export default function Home() {
   return (
     <main className="min-h-screen">
       <Navbar />
       <NewsTicker />
-      <SeasonalGreeting />
+      {/* <SeasonalGreeting /> */}
       <Hero />
       <Features />
       <Ticker />
