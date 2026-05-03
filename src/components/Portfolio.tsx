@@ -7,6 +7,13 @@ export default function Portfolio() {
 
   const projects = [
     {
+      title: "WealthAlliance",
+      description: "AI-Powered Property Management Platform for Nigerian Landlords",
+      image: "/wealthalliance.png",
+      previewUrl: "https://wealthalliance.vercel.app/",
+      tags: ["Web App", "AI", "Fintech"]
+    },
+    {
       title: "Dr. Pink Orthodontics",
       description: "Dental Practice Management System",
       image: "/drpink.png",
