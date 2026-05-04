@@ -38,12 +38,12 @@ export default function BeyondIDE() {
     "/beyond/IMG_8909.HEIC",
     "/beyond/IMG_8936.HEIC",
     "/beyond/IMG_9028.HEIC",
-    "/beyond/cert.jpg",
+    "/beyond/IMG_9099.HEIC",
     "/beyond/IMG_9140.HEIC",
     "/beyond/IMG_9196.HEIC"
   ];
 
-  const lastPhoto = "/beyond/IMG_9099.HEIC";
+  const lastPhoto = "/beyond/cert.jpg";
 
   return (
     <section id="beyond-ide" className="py-20 bg-gradient-to-br from-slate-50 to-slate-100 text-black relative overflow-hidden">
