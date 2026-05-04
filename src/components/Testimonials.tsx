@@ -40,7 +40,7 @@ export default function Testimonials() {
       quote: "Working on Boundless has been an incredible experience. The cross-border payment solution is seamless and efficient, making international transactions faster and more accessible for users worldwide.",
       author: "Devcollins",
       role: "Co-founder, Boundless",
-      avatar: "https://randomuser.me/api/portraits/men/22.jpg"
+      avatar: "/devcollins.jpg"
     }
   ];
 
