@@ -41,7 +41,7 @@ export default function BeyondIDE() {
     "/beyond/IMG_9099.HEIC",
     "/beyond/IMG_9140.HEIC",
     "/beyond/IMG_9196.HEIC",
-    "/beyond/cert.heic"
+    "/beyond/cert.jpg"
   ];
 
   return (
