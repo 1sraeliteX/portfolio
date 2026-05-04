@@ -40,9 +40,10 @@ export default function BeyondIDE() {
     "/beyond/IMG_9028.HEIC",
     "/beyond/IMG_9099.HEIC",
     "/beyond/IMG_9140.HEIC",
-    "/beyond/IMG_9196.HEIC",
-    "/beyond/cert.jpg"
+    "/beyond/IMG_9196.HEIC"
   ];
+
+  const lastPhoto = "/beyond/cert.jpg";
 
   return (
     <section id="beyond-ide" className="py-20 bg-gradient-to-br from-slate-50 to-slate-100 text-black relative overflow-hidden">
@@ -110,6 +111,25 @@ export default function BeyondIDE() {
               />
             </div>
           ))}
+        </div>
+
+        {/* Last Image - Certificate */}
+        <div className="mt-8 flex justify-center">
+          <div
+            className="relative overflow-hidden rounded-xl bg-gray-100 max-w-md w-full
+              shadow-[0_8px_32px_0_rgba(0,0,0,0.12)] hover:shadow-[0_12px_48px_0_rgba(0,0,0,0.2)]
+              transition-all duration-300 transform hover:scale-[1.02]"
+          >
+            <img
+              src={lastPhoto}
+              alt="Certificate"
+              className="w-full h-auto object-cover"
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                target.style.display = 'none';
+              }}
+            />
+          </div>
         </div>
       </div>
     </section>
