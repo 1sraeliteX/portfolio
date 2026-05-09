@@ -11,7 +11,7 @@ export default function Portfolio() {
       description: "AI-Powered Property Management Platform for Nigerian Landlords",
       image: "/wealthalliance.png",
       previewUrl: "https://wealthalliance.vercel.app/",
-      tags: ["Web App", "AI", "Fintech"]
+      tags: ["Web App", "AI", "Real estate"]
     },
     {
       title: "Dr. Pink Orthodontics",
