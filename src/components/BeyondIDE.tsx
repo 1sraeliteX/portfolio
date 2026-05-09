@@ -20,6 +20,7 @@ export default function BeyondIDE() {
   ];
 
   const photos = [
+    "/beyond/465b4186-92e8-4bd4-9796-a4ca8c0f7a68.jpg",
     "/beyond/4bf003d4-21a3-4968-aa32-5205df2a3636.jpg",
     "/beyond/5df9474b-b913-4678-b3e5-28fd4d14d6e0.jpg",
     "/beyond/IMG_8499.HEIC",
@@ -90,27 +91,7 @@ export default function BeyondIDE() {
           ))}
         </div>
 
-        {/* Featured UNESCO Image */}
-        <div className="mb-16">
-          <div className="max-w-4xl mx-auto">
-            <div className="relative overflow-hidden rounded-xl bg-gray-100 shadow-[0_8px_32px_0_rgba(0,0,0,0.12)] hover:shadow-[0_12px_48px_0_rgba(0,0,0,0.2)] transition-all duration-300 transform hover:scale-[1.02]">
-              <img
-                src="/beyond/465b4186-92e8-4bd4-9796-a4ca8c0f7a68.jpg"
-                alt="UNESCO Sustainable Development Goals"
-                className="w-full h-auto object-cover"
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement;
-                  console.error('Failed to load UNESCO image:', e);
-                  target.style.display = 'none';
-                }}
-                onLoad={() => {
-                  console.log('UNESCO image loaded successfully');
-                }}
-              />
-            </div>
-          </div>
-        </div>
-
+        
         {/* Photo Gallery */}
         <h3 className="text-2xl font-semibold text-center text-gray-900 mb-8">Photo Gallery</h3>
         <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
